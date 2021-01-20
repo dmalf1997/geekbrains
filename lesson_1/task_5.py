@@ -11,6 +11,6 @@ if result > 0:
     person = input("Сколько человек работает в фирме: ")
     person = int(person)
     result_person = result / person
-    print(f"Рентабельность - {rate}, прибыль на одного сотрудника - {result_person}")
+    print(f"Рентабельность - {rate:.2f}, прибыль на одного сотрудника - {result_person:.2f}")
 else:
     print("Фирма отработала в убыток")
