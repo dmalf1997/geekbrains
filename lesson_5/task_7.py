@@ -10,6 +10,9 @@ with open("task_7.txt","r") as file_read:
             if data[key] > 0:
                 summa += data[key]
                 result[0].update({key: data[key]})
-            i += 1
+                i += 1
+        print(summa)
+        print(i)
         result.append({"average_profit": summa/i})
+        print(summa/i)
         file_write.write(json.dumps(result))
